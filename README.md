@@ -3,6 +3,12 @@
 This is a Laravel package for Shieldfy SDK
 
 
+
+[![Packagist](https://img.shields.io/packagist/v/shieldfy/shieldfy-laravel-client.svg?label=Packagist&style=flat-square)](https://packagist.org/packages/shieldfy/shieldfy-laravel-client)
+[![StyleCI](https://styleci.io/repos/77051902/shield)](https://styleci.io/repos/77051902)
+
+
+
 ## Installation
 
 You will need first to register on [shieldfy.io](https://shieldfy.io/) to get your APP Key & APP Secret.
