@@ -1,0 +1,37 @@
+{
+    "name": "shieldfy/shieldfy-laravel-client",
+    "description": "shieldfy firewall component for laravel framework",
+    "license": "MIT",
+    "keywords": [
+        "shieldfy",
+        "security",
+        "firewall",
+        "detection",
+        "application",
+        "attack",
+        "bypass",
+        "ips",
+        "ids"
+    ],
+    "authors": [
+        {
+            "name": "Shieldfy Inc.",
+            "homepage":"https://shieldfy.com",
+            "email": "team@shieldfy.com"
+        },
+        {
+            "name": "Eslam Salem",
+            "email": "eslam@shieldfy.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Shieldfy\\ShieldfyLaravelClient\\": "src/"
+      }
+    },
+    "require": {
+        "php": ">=5.5",
+    	"shieldfy/shieldfy-php-client":"1.*"
+    },
+    "prefer-stable": true
+}
