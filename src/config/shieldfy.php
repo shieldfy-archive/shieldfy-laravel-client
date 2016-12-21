@@ -19,7 +19,7 @@ return [
      |--------------------------------------------------------------------------
      */
     'keys' => [
-        'app_key' => env('SHIELDFY_APP_KEY'),
+        'app_key'    => env('SHIELDFY_APP_KEY'),
         'app_secret' => env('SHIELDFY_APP_SECRET'),
     ],
 
@@ -28,14 +28,14 @@ return [
      | Shieldfy debug whether or not expose debug and errors ( True , False )
      |--------------------------------------------------------------------------
      */
-    'debug' => env('SHIELDFY_DEBUG',false),
+    'debug' => env('SHIELDFY_DEBUG', false),
 
     /*
      |--------------------------------------------------------------------------
      | Shieldfy default action for detecting threat ( block , listen )
      |--------------------------------------------------------------------------
      */
-    'action' => env('SHIELDFY_ACTION','block'),
+    'action' => env('SHIELDFY_ACTION', 'block'),
 
     /*
      |--------------------------------------------------------------------------
@@ -46,7 +46,6 @@ return [
      | -- X-Frame-Options
      |--------------------------------------------------------------------------
      */
-    'disabledHeaders' => []
-
+    'disabledHeaders' => [],
 
 ];
