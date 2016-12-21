@@ -5,7 +5,7 @@ This is a Laravel package for Shieldfy SDK
 
 ## Installation
 
-You will need first to register on [shieldfy.com](https://shieldfy.com/) to get your APP Key & APP Secret.
+You will need first to register on [shieldfy.io](https://shieldfy.io/) to get your APP Key & APP Secret.
 
 
 Through Composer (the recommended way)
