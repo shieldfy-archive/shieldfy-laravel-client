@@ -17,13 +17,18 @@ class ShieldfyMiddleware
      */
     public function handle($request, Closure $next)
     {
-        Guard::init([
+        $guard = Guard::init([
                 'app_key'        => config('shieldfy.keys.app_key'),
                 'app_secret'     => config('shieldfy.keys.app_secret'),
                 'debug'          => config('shieldfy.debug'),
                 'action'         => config('shieldfy.action'),
-                'disabledHeaders'=> config('shieldfy.disabledHeaders'),
-        ])->catchCallbacks();
+                'headers'=> config('shieldfy.headers'),
+                'disable'=> config('shieldfy.disable'),
+        ]);
+        //
+        DB::listen(function($query) use($guard){
+            $guard->attachQuery($query);
+        });
 
         return $next($request);
     }

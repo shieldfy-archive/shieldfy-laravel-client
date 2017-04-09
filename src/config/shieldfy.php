@@ -39,13 +39,23 @@ return [
 
     /*
      |--------------------------------------------------------------------------
-     | List of headers you don't want shieldfy to expose
-     | Shieldfy expose the following headers by default
-     | -- X-XSS-Protection
-     | -- X-Content-Type-Options
-     | -- X-Frame-Options
+     | List of headers exposed to shieldfy to overwrite
+     | format
+     | key => value
+     | example
+     | ['X-Frame-Options'=>'DENY']
+     | you can specify false to disable the header
+     | example
+     | ['X-Frame-Options'=>false]
      |--------------------------------------------------------------------------
      */
-    'disabledHeaders' => [],
+    'headers' => [],
+
+    /*
+     |--------------------------------------------------------------------------
+     | list of monitors you want to disable
+     |--------------------------------------------------------------------------
+     */
+    'disable' => []
 
 ];
