@@ -2,6 +2,7 @@
 
 namespace Shieldfy\ShieldfyLaravelClient\Middlewares;
 
+use DB;
 use Closure;
 use Shieldfy\Guard;
 
@@ -25,6 +26,7 @@ class ShieldfyMiddleware
                 'headers'=> config('shieldfy.headers'),
                 'disable'=> config('shieldfy.disable'),
         ]);
+       
         //
         DB::listen(function($query) use($guard){
             $guard->attachQuery($query);

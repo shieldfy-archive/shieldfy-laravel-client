@@ -13,9 +13,8 @@ class ShieldfyServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        require __DIR__.'/../vendor/autoload.php';
         $this->publishes([
-            __DIR__.'config/shieldfy.php' => config_path('shieldfy.php'),
+            __DIR__.'/config/shieldfy.php' => config_path('shieldfy.php'),
         ]);
     }
 

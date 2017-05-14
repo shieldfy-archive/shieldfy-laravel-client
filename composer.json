@@ -33,5 +33,6 @@
         "php": ">=5.6",
     	"shieldfy/shieldfy-php-client":"dev-develop@dev"
     },
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
