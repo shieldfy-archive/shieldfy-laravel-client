@@ -62,7 +62,7 @@ protected $middleware = [
 
 ```
 
-for more information about configurations and usage , go to the official documentation [shieldfy.com/docs](https://shieldfy.com/docs)
+for more information about configurations and usage , go to the official documentation [docs.shieldfy.io/docs](https://docs.shieldfy.io)
 
 ## Contributing 
 
