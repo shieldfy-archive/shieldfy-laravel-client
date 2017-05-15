@@ -30,8 +30,9 @@
       }
     },
     "require": {
-        "php": ">=5.5",
-    	"shieldfy/shieldfy-php-client":"1.*"
+        "php": ">=5.6",
+    	"shieldfy/shieldfy-php-client":"dev-develop@dev"
     },
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
