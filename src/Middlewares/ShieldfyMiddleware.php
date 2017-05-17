@@ -27,6 +27,10 @@ class ShieldfyMiddleware
                 'headers'=> config('shieldfy.headers'),
                 'disable'=> config('shieldfy.disable'),
         ]);
+
+        view()->composer('*', function($view) use($guard) {
+            $guard->attachViewInfo($view->getPath());
+        });
        
         //
         DB::listen(function($query) use($guard){
