@@ -16,12 +16,12 @@
     "authors": [
         {
             "name": "Shieldfy Inc.",
-            "homepage":"https://shieldfy.com",
-            "email": "team@shieldfy.com"
+            "homepage":"https://shieldfy.io",
+            "email": "team@shieldfy.io"
         },
         {
             "name": "Eslam Salem",
-            "email": "eslam@shieldfy.com"
+            "email": "eslam@shieldfy.io"
         }
     ],
     "autoload": {
@@ -31,7 +31,7 @@
     },
     "require": {
         "php": ">=5.6",
-    	"shieldfy/shieldfy-php-client":"dev-develop@dev"
+    	"shieldfy/shieldfy-php-client":"2.*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
