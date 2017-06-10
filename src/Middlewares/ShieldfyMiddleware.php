@@ -2,8 +2,8 @@
 
 namespace Shieldfy\ShieldfyLaravelClient\Middlewares;
 
-use DB;
 use Closure;
+use DB;
 use Shieldfy\Guard;
 
 class ShieldfyMiddleware
@@ -18,22 +18,21 @@ class ShieldfyMiddleware
      */
     public function handle($request, Closure $next)
     {
-
         $guard = Guard::init([
-                'app_key'        => config('shieldfy.keys.app_key' , env('SHIELDFY_APP_KEY')),
-                'app_secret'     => config('shieldfy.keys.app_secret' , env('SHIELDFY_APP_SECRET')),
+                'app_key'        => config('shieldfy.keys.app_key', env('SHIELDFY_APP_KEY')),
+                'app_secret'     => config('shieldfy.keys.app_secret', env('SHIELDFY_APP_SECRET')),
                 'debug'          => config('shieldfy.debug'),
                 'action'         => config('shieldfy.action'),
-                'headers'=> config('shieldfy.headers'),
-                'disable'=> config('shieldfy.disable'),
+                'headers'        => config('shieldfy.headers'),
+                'disable'        => config('shieldfy.disable'),
         ]);
 
-        view()->composer('*', function($view) use($guard) {
+        view()->composer('*', function ($view) use ($guard) {
             $guard->attachViewInfo($view->getPath());
         });
-       
+
         //
-        DB::listen(function($query) use($guard){
+        DB::listen(function ($query) use ($guard) {
             $guard->attachQuery($query);
         });
 

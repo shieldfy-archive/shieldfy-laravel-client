@@ -56,6 +56,6 @@ return [
      | list of monitors you want to disable
      |--------------------------------------------------------------------------
      */
-    'disable' => []
+    'disable' => [],
 
 ];
