@@ -2,6 +2,7 @@
 
 namespace Shieldfy\ShieldfyLaravelClient;
 
+use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 use Shieldfy\ShieldfyLaravelClient\Middlewares\ShieldfyMiddleware;
 
