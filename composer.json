@@ -31,6 +31,7 @@
     },
     "require": {
         "php": ">=5.6",
+        "laravel/framework":">=5.2",
     	"shieldfy/shieldfy-php-client":"2.*"
     },
     "minimum-stability": "dev",
