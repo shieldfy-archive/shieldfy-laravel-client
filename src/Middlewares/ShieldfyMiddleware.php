@@ -30,8 +30,8 @@ class ShieldfyMiddleware
         view()->composer('*', function ($view) use ($guard) {
             $guard->attachViewInfo($view->getPath());
         });
-        
-        DB::listen(function($query) use($guard){ 
+
+        DB::listen(function ($query) use ($guard) {
             $guard->attachQuery($query);
         });
 
