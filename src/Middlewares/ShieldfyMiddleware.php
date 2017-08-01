@@ -31,7 +31,6 @@ class ShieldfyMiddleware
             $guard->attachViewInfo($view->getPath());
         });
 
-        //
         DB::listen(function ($query) use ($guard) {
             $guard->attachQuery($query);
         });
